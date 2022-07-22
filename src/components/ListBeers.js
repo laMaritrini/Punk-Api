@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-
+import './ListBeers.css';
 import { getAllBeers } from '../services/api';
 
-export function ListBeers() {
+export function ListBeers({ keyword }) {
     const [beers, setBeers] = useState([]);
-    const [keyword, setKeyword] = useState('');
 
     useEffect(() => {
         getAllBeers().then((resp) => {
@@ -12,24 +11,8 @@ export function ListBeers() {
         });
     }, []);
 
-    const handleChange = (e) => {
-        setKeyword(e.target.value);
-    };
-
     return (
         <>
-            <form
-                onSubmit={(e) => {
-                    e.preventDefault();
-                }}
-            >
-                <input
-                    type="text"
-                    placeholder="Search"
-                    value={keyword}
-                    onChange={handleChange}
-                />
-            </form>
             <div className="grid-container">
                 {beers
                     .filter((beer) => {
