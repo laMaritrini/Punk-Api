@@ -1,0 +1,35 @@
+.home {
+    margin: 20px;
+    padding: 80px 20px 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.title-app {
+    color: black;
+    background: inherit;
+    font-size: 30px;
+    padding-left: 5px;
+    width: 260px;
+}
+.input-search {
+    box-sizing: border-box;
+    padding: 15px 15px 15px 35px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.input-container {
+    position: relative;
+    width: 271px;
+}
+.input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
