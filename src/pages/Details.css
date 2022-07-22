@@ -11,10 +11,11 @@
     align-self: flex-start;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 35px 25px;
 }
 .link-home {
     font-weight: 600;
+    font-size: 1.5rem;
 }
 .detail-img {
     height: 450px;
@@ -54,13 +55,13 @@
         align-items: center;
     }
     .nav-bar {
-        padding: 20px 50px;
+        padding: 70px 50px;
     }
     .link-home {
         font-weight: 600;
         font-size: 2rem;
     }
     .title-app {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
